@@ -1,3 +1,12 @@
+body {
+  background: linear-gradient(45deg, #d4fc79, #96e6a1);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +44,127 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.move-btn,
+.remove-btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+.columns-container {
+  display: flex;
+}
+
+input,
+button {
+  margin-top: 5px;
+}
+
+/* Kanban Board Container */
+.kanban-board {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 80vw;
+}
+
+/* CreateCard Component */
+form {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 20px;
+}
+
+input {
+  width: 70%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+/* Column Component */
+.column {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  min-height: 300px;
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  text-align: center;
+  color: #4caf50;
+}
+
+/* Card Component */
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  backdrop-filter: blur(10px);
+}
+
+.task-name {
+  color: #4caf50;
+}
+
+.task-details {
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.move-btn {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+.remove-btn {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: #f44336;
+  color: white;
+  cursor: pointer;
+}
+
+.AddTaskBtn{
+  margin-left: 20px;
 }
